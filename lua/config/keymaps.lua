@@ -6,18 +6,12 @@
 vim.keymap.set("i", "jj", "<Esc>", { noremap = true })
 
 -- nvim-python-repl
-vim.keymap.set("v", "<leader>tt", function()
+vim.keymap.set("v", "<leader>rr", function()
   require("nvim-python-repl").send_visual_to_repl()
 end, { desc = "Send visual selection to REPL" })
 
 -- Create a Keymap for Noice
 vim.keymap.set("n", "<leader>nd", "<cmd>NoiceDismiss<CR>", { desc = "Dismiss Noice Message" })
-
--- Move the cursor using io and jk rather than arrows
-vim.keymap.set("i", "<C-i>", "<Left>")
-vim.keymap.set("i", "<C-o>", "<Right>")
-vim.keymap.set("i", "<C-k>", "<Up>")
-vim.keymap.set("i", "<C-j>", "<Down>")
 
 -- avante
 vim.keymap.set(
