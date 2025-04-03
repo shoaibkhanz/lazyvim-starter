@@ -26,6 +26,12 @@ vim.keymap.set(
   "<cmd>AvanteSwitchProvider copilot<CR>",
   { desc = "switch to github copilot as provider in avante" }
 )
+vim.keymap.set(
+  "n",
+  "<leader>ac",
+  "<cmd>AvanteSwitchProvider claude<CR>",
+  { desc = "switch to claude as provider in avante" }
+)
 
 -- tmux navigation
 vim.keymap.set("n", "<C-h>", ":<C-U>TmuxNavigateLeft<cr>", { noremap = true, silent = true })
